@@ -42,3 +42,8 @@ if "milk" in cart and cart["milk"] > 2:
 
 total -= discount
 print("Total = $" + str(total))
+
+if total > 10:
+    print("You spent a lot!")
+else:
+    print("You spent a little!")
