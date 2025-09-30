@@ -24,5 +24,11 @@ while item != "done":
 
 for i in cart:
     total += store[i]
-    
+
 print("Your total is:", total)
+
+if total > 10:
+    print("You spent a lot!")
+else:
+    print("You spent a little!")
+
