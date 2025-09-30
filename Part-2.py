@@ -14,7 +14,7 @@ while item != "done":
     for i in Groceries:
         if item == i:
             found = 1
-            
+
     if found == 1:
         Q = input("choose how many: ").strip()
         if Q.isdigit():
@@ -34,4 +34,4 @@ while item != "done":
 
     item = input("What do you want to buy? ").strip().lower()
 
-print("You bought: ", cart)
+print("You bought : ", cart)
