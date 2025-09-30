@@ -8,3 +8,16 @@ store = {
 cart = []
 total = 0
 item = input("What do you wanna buy: ").lower()
+
+while item != "done":
+    found = False
+    for i in store:
+        if item == i:
+            found = True
+    
+    if found:
+        cart.append(item)
+    else:
+        print("Sorry, item is not available.")
+    
+    item = input("What do you wanna buy: ").lower()
