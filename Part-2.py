@@ -8,3 +8,9 @@ Groceries = {
 item = input("What do you want to buy? ").strip().lower()
 total = 0
 cart = {}
+
+while item != "done":
+    found = 0
+    for i in Groceries:
+        if item == i:
+            found = 1
