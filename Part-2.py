@@ -35,3 +35,10 @@ while item != "done":
     item = input("What do you want to buy? ").strip().lower()
 
 print("You bought : ", cart)
+
+discount = 0
+if "milk" in cart and cart["milk"] > 2:
+    discount = 1
+
+total -= discount
+print("Total = $" + str(total))
