@@ -21,3 +21,8 @@ while item != "done":
         print("Sorry, item is not available.")
     
     item = input("What do you wanna buy: ").lower()
+
+for i in cart:
+    total += store[i]
+    
+print("Your total is:", total)
